@@ -4,8 +4,7 @@ def galvena_funkcija():
     try:
         with open("failsa.txt","w", encoding="utf-8") as b:
             b.write(ievade)
-            saturs = b.read()
-            if ievade in saturs:
+            if ievade in b:
                 print("Ir izveidots fails, un tajā ir ierakstīts Tavs vārds!")
             
     except SyntaxError:
