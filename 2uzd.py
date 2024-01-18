@@ -2,7 +2,8 @@ import csv
 def funkcija():
     try:
         with open("fails2.csv", "r", encoding="utf-8") as bb:
-            pass
+            saturs = csv.reader(bb)
+            print(saturs)
             
     except:
         pass
